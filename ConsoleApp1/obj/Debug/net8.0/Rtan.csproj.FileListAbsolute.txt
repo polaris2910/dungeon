@@ -1,0 +1,14 @@
+D:\code\Rtan\ConsoleApp1\bin\Debug\net8.0\Rtan.exe
+D:\code\Rtan\ConsoleApp1\bin\Debug\net8.0\Rtan.deps.json
+D:\code\Rtan\ConsoleApp1\bin\Debug\net8.0\Rtan.runtimeconfig.json
+D:\code\Rtan\ConsoleApp1\bin\Debug\net8.0\Rtan.dll
+D:\code\Rtan\ConsoleApp1\bin\Debug\net8.0\Rtan.pdb
+D:\code\Rtan\ConsoleApp1\obj\Debug\net8.0\Rtan.GeneratedMSBuildEditorConfig.editorconfig
+D:\code\Rtan\ConsoleApp1\obj\Debug\net8.0\Rtan.AssemblyInfoInputs.cache
+D:\code\Rtan\ConsoleApp1\obj\Debug\net8.0\Rtan.AssemblyInfo.cs
+D:\code\Rtan\ConsoleApp1\obj\Debug\net8.0\Rtan.csproj.CoreCompileInputs.cache
+D:\code\Rtan\ConsoleApp1\obj\Debug\net8.0\Rtan.dll
+D:\code\Rtan\ConsoleApp1\obj\Debug\net8.0\refint\Rtan.dll
+D:\code\Rtan\ConsoleApp1\obj\Debug\net8.0\Rtan.pdb
+D:\code\Rtan\ConsoleApp1\obj\Debug\net8.0\Rtan.genruntimeconfig.cache
+D:\code\Rtan\ConsoleApp1\obj\Debug\net8.0\ref\Rtan.dll
