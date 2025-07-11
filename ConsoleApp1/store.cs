@@ -24,7 +24,7 @@ namespace Rtanstore
                 Console.WriteLine("필요한 아이템을 얻을 수 있는 상점입니다.");
                 Console.WriteLine(" ");
                 Console.WriteLine("[보유 골드]");
-                Console.WriteLine("Gold : " + data.Gold + "G");
+                Console.WriteLine(data.Gold + "G");
                 Console.WriteLine("[아이템 목록]");
                 for (int i = 0; i < Village.storeList.Count; i++)
                 {
@@ -65,6 +65,9 @@ namespace Rtanstore
         {
             Console.Clear();
             Console.WriteLine("상점 - 아이템 구매");
+            Console.WriteLine(" ");
+            Console.WriteLine("[보유 골드]");
+            Console.WriteLine(data.Gold + "G");
             for (int i = 0; i < Village.storeList.Count; i++)
             {
                 Item item = Village.storeList[i];
@@ -87,22 +90,28 @@ namespace Rtanstore
                 Item selectedItem = Village.storeList[selectedIndex];
                 if (data.Gold >= selectedItem.Price)
                 {
-                    data.Gold -= selectedItem.Price;
-                    Village.inventoryList.Add(selectedItem);
-                    Village.storeList.Remove(selectedItem);
-                    Console.WriteLine($"{selectedItem.NameTxt}을(를) 구매했습니다!");
+                    if (!Village.inventoryList.Contains(selectedItem))
+                    {
+                        data.Gold -= selectedItem.Price;
+                        Village.inventoryList.Add(selectedItem);
+                        Console.WriteLine($"구매를 완료했습니다.");
+                    }
+                    else
+                    {
+                        Console.WriteLine($"이미 구매한 아이템입니다");
+                    }
                 }
                 else
                 {
-                    Console.WriteLine("골드가 부족합니다.");
+                    Console.WriteLine("Gold가 부족합니다.");
                 }
-        }
+            }
             else
             {
                 Console.WriteLine("잘못된 입력입니다.");
             }
 
-    Console.WriteLine("\n엔터를 누르면 상점으로 돌아갑니다.");
+            Console.WriteLine("\n엔터를 누르면 상점으로 돌아갑니다.");
             Console.ReadLine();
         }
     }

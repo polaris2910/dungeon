@@ -18,6 +18,7 @@ namespace Rtaninventory
             Console.Clear();
             while (true)
             {
+                Console.Clear();
                 Console.WriteLine("인벤토리");
                 Console.WriteLine("보유 중인 아이템을 관리할 수 있습니다.");
                 Console.WriteLine("[아이템 목록]");
@@ -62,7 +63,6 @@ namespace Rtaninventory
         public static void EquipMenu()
         {
             Console.Clear();
-            Console.Clear();
             Console.WriteLine("인벤토리 - 장착 관리");
             for (int i = 0; i < Village.inventoryList.Count; i++)
             {
@@ -82,11 +82,21 @@ namespace Rtaninventory
             string say = Console.ReadLine();
 
             if (int.TryParse(say, out int selectedIndex) &&
-                selectedIndex >= 0 && selectedIndex < Village.inventoryList.Count)
+                    selectedIndex >= 0 && selectedIndex < Village.inventoryList.Count)
             {
-                Village.Equipitem = Village.inventoryList[selectedIndex];
-                Console.WriteLine($"{Village.Equipitem.NameTxt}을(를) 장착했습니다!");
+                if(Village.inventoryList[selectedIndex] != Village.Equipitem)
+                {
+                    Village.Equipitem = Village.inventoryList[selectedIndex];
+                    Console.WriteLine($"{Village.Equipitem.NameTxt}을(를) 장착했습니다!");
+                }
+
+                else 
+                {
+                    Village.Equipitem = null;
+                    Console.WriteLine($"{Village.inventoryList[selectedIndex].NameTxt}을(를) 장착 해제했습니다!");
+                }
             }
+
             else
             {
                 Console.WriteLine("잘못된 입력입니다.");

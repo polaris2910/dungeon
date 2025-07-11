@@ -12,3 +12,4 @@ D:\code\Rtan\ConsoleApp1\obj\Debug\net8.0\refint\Rtan.dll
 D:\code\Rtan\ConsoleApp1\obj\Debug\net8.0\Rtan.pdb
 D:\code\Rtan\ConsoleApp1\obj\Debug\net8.0\Rtan.genruntimeconfig.cache
 D:\code\Rtan\ConsoleApp1\obj\Debug\net8.0\ref\Rtan.dll
+D:\code\Rtan\ConsoleApp1\obj\Debug\net8.0\Rtan.sourcelink.json

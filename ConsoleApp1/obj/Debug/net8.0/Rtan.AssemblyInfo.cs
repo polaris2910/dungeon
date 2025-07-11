@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Rtan")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+44675023447c56fb2ec49c0da77386bb1f6b7944")]
 [assembly: System.Reflection.AssemblyProductAttribute("Rtan")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Rtan")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
