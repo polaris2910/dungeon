@@ -23,6 +23,13 @@ namespace ConsoleApp1
             //아이템 리스트 추가 상점과 인벤토리 따로따로 제작
 
             monsterList.Add(new Monster("미니언", 15 ,5 ));
+            monsterList.Add(new Monster("원거리 미니언", 10, 7));
+            monsterList.Add(new Monster("슈퍼 미니언", 30, 10));
+            monsterList.Add(new Monster("굼바", 1, 1));
+            monsterList.Add(new Monster("쿠파", 30, 30));
+            monsterList.Add(new Monster("고블린", 15, 15));
+            monsterList.Add(new Monster("지렁이", 1, 0));
+            monsterList.Add(new Monster("돌맹이", 200, 0));
             storeList.Add(new Weapon("듀얼디스크", "어쨋든 1대1은 받아줄것 같습니다.", 100,500));
             storeList.Add(new Weapon("청동도끼", "어디선가 사용됐던거 같은 도끼입니다.", 5,600));
             storeList.Add(new Armor("수련자 갑옷", "수련에 도움을 주는 갑옷입니다.", 9,5022));
