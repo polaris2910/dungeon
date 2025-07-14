@@ -26,7 +26,7 @@ namespace Rtaninventory
                 {
                     Item item = Village.inventoryList[i];
                     string statInfo = "";
-                    string equipMark = (item == Village.Equipitem) ? "[E] " : "";
+                    string equipMark = (item == Village.EquipItem) ? "[E] " : "";
 
                     if (item is Weapon weapon)
                     {
@@ -68,7 +68,7 @@ namespace Rtaninventory
             {
                 Item item = Village.inventoryList[i];
                 string statInfo = "";
-                string equipMark = (item == Village.Equipitem) ? "[E] " : "";
+                string equipMark = (item == Village.EquipItem) ? "[E] " : "";
 
                 if (item is Weapon weapon)
                     statInfo = $"공격력: {weapon.Atkstat}";
@@ -84,15 +84,15 @@ namespace Rtaninventory
             if (int.TryParse(say, out int selectedIndex) &&
                     selectedIndex >= 0 && selectedIndex < Village.inventoryList.Count)
             {
-                if(Village.inventoryList[selectedIndex] != Village.Equipitem)
+                if(Village.inventoryList[selectedIndex] != Village.EquipItem)
                 {
-                    Village.Equipitem = Village.inventoryList[selectedIndex];
-                    Console.WriteLine($"{Village.Equipitem.NameTxt}을(를) 장착했습니다!");
+                    Village.EquipItem = Village.inventoryList[selectedIndex];
+                    Console.WriteLine($"{Village.EquipItem.NameTxt}을(를) 장착했습니다!");
                 }
 
                 else 
                 {
-                    Village.Equipitem = null;
+                    Village.EquipItem = null;
                     Console.WriteLine($"{Village.inventoryList[selectedIndex].NameTxt}을(를) 장착 해제했습니다!");
                 }
             }

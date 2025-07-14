@@ -24,11 +24,11 @@ namespace Rtanstat
             int plusAtk = 0;
             int plusDef = 0;
 
-            if (Village.Equipitem is Weapon weapon)
+            if (Village.EquipItem is Weapon weapon)
             {
                 plusAtk = weapon.Atkstat;
             }
-            else if (Village.Equipitem is Armor armor)
+            else if (Village.EquipItem is Armor armor)
             {
                 plusDef = armor.Defstat;
             }//장비 능력치 가져오기

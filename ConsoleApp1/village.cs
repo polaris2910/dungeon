@@ -14,7 +14,7 @@ namespace ConsoleApp1
         
         public static List<Item> inventoryList = new List<Item>();
         public static List<Item> storeList = new List<Item>();
-        public static Item Equipitem = null;
+        public static Item EquipItem = null;
         static void Main(string[] args)
         {
             Console.Clear();
@@ -45,10 +45,10 @@ namespace ConsoleApp1
                 Console.WriteLine("원하시는 행동을 입력해주세요.");
 
 
-                string how = Console.ReadLine();
+                string userChoice = Console.ReadLine();
                 Console.WriteLine(" ");
 
-                switch (how)
+                switch (userChoice)
                 {
                     case "1":
                         Stat.Displaystat();
