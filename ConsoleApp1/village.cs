@@ -4,6 +4,7 @@ using Rtanitem;
 using Rtanstat;
 using Rtanstore;
 using Rtandungeon;
+using RtanMonster;
 using static Rtanitem.RtanItem;
 
 
@@ -14,13 +15,14 @@ namespace ConsoleApp1
         
         public static List<Item> inventoryList = new List<Item>();
         public static List<Item> storeList = new List<Item>();
+        public static List<Monster> monsterList = new List<Monster>();
         public static Item EquipItem = null;
         static void Main(string[] args)
         {
             Console.Clear();
             //아이템 리스트 추가 상점과 인벤토리 따로따로 제작
 
-
+            monsterList.Add(new Monster("미니언", 15 ,5 ));
             storeList.Add(new Weapon("듀얼디스크", "어쨋든 1대1은 받아줄것 같습니다.", 100,500));
             storeList.Add(new Weapon("청동도끼", "어디선가 사용됐던거 같은 도끼입니다.", 5,600));
             storeList.Add(new Armor("수련자 갑옷", "수련에 도움을 주는 갑옷입니다.", 9,5022));
