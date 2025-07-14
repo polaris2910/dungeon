@@ -3,6 +3,7 @@ using Rtaninventory;
 using Rtanitem;
 using Rtanstat;
 using Rtanstore;
+using Rtandungeon;
 using static Rtanitem.RtanItem;
 
 
@@ -40,6 +41,7 @@ namespace ConsoleApp1
                 Console.WriteLine("1. 상태 보기");
                 Console.WriteLine("2. 인벤토리");
                 Console.WriteLine("3. 상점");
+                Console.WriteLine("4. 던전");
                 Console.WriteLine("원하시는 행동을 입력해주세요.");
 
 
@@ -56,6 +58,9 @@ namespace ConsoleApp1
                         break;
                     case "3":
                         store.buy();
+                        break;
+                    case "4":
+                        dungeon.Dungeon();
                         break;
                     default:
                         Console.WriteLine("잘못된 입력입니다");

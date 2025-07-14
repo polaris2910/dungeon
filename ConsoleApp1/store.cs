@@ -43,6 +43,7 @@ namespace Rtanstore
                 }
                 Console.WriteLine(" ");
                 Console.WriteLine("1.아이템 구매");
+                Console.WriteLine("2.휴식");
                 Console.WriteLine("0. 나가기");
 
                 Console.WriteLine("원하시는 행동을 입력해주세요.");
@@ -51,6 +52,9 @@ namespace Rtanstore
                 {
                     case "1":
                         store.BuyMenu();
+                        break;
+                    case "2":
+                        store.Lest();
                         break;
                     case "0":
                         return;
@@ -111,6 +115,13 @@ namespace Rtanstore
                 Console.WriteLine("잘못된 입력입니다.");
             }
 
+            Console.WriteLine("\n엔터를 누르면 상점으로 돌아갑니다.");
+            Console.ReadLine();
+        }
+        public static void Lest()
+        {
+            data.HP = 100;
+            Console.WriteLine("체력이 회복되었습니다.");
             Console.WriteLine("\n엔터를 누르면 상점으로 돌아갑니다.");
             Console.ReadLine();
         }
