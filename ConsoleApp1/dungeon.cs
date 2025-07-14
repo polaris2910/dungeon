@@ -16,7 +16,9 @@ namespace Rtandungeon
     internal class Dungeon
     {
         public void Battle()
+        
         {
+            Console.Clear();
             Random random = new Random();
 
             while (true)
