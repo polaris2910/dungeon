@@ -13,11 +13,7 @@ namespace Rtaninventory
 
     internal class Inventory
     {
-<<<<<<< Updated upstream
-        public static void boy()
-=======
         public void Pouch()
->>>>>>> Stashed changes
         {
             Console.Clear();
             while (true)

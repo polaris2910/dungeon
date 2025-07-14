@@ -51,21 +51,19 @@ namespace ConsoleApp1
                 switch (how)
                 {
                     case "1":
-                        stat.say();
+                        Stat.Displaystat();
                         break;
                     case "2":
-<<<<<<< Updated upstream
-                        inventory.boy();
-=======
                         Inventory inventory = new Inventory();
                         inventory.Pouch();
->>>>>>> Stashed changes
                         break;
                     case "3":
-                        store.buy();
+                        Store store = new Store();
+                        store.Buy();
                         break;
                     case "4":
-                        dungeon.Dungeon();
+                        Dungeon dungeon= new Dungeon();
+                        dungeon.Battle();
                         break;
                     default:
                         Console.WriteLine("잘못된 입력입니다");

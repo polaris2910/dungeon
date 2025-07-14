@@ -13,7 +13,7 @@ namespace Rtanstat
         
         public static StatData data = new StatData();
        
-        public static void say()
+        public static void Displaystat()
         {
             Console.Clear();
             Console.WriteLine("상태 보기");

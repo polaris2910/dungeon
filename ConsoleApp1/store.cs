@@ -9,7 +9,7 @@ using Rtanitem;
 using Rtanstat;
 using static System.Runtime.InteropServices.JavaScript.JSType;
 using static Rtanitem.RtanItem;
-using static Rtanstat.stat;
+using static Rtanstat.Stat;
 
 namespace Rtanstore
 {
@@ -24,7 +24,7 @@ namespace Rtanstore
                 Console.WriteLine("필요한 아이템을 얻을 수 있는 상점입니다.");
                 Console.WriteLine(" ");
                 Console.WriteLine("[보유 골드]");
-                Console.WriteLine(data.Gold + "G");
+                Console.WriteLine(Stat.data.Gold + "G");
                 Console.WriteLine("[아이템 목록]");
                 for (int i = 0; i < Village.storeList.Count; i++)
                 {
@@ -71,7 +71,7 @@ namespace Rtanstore
             Console.WriteLine("상점 - 아이템 구매");
             Console.WriteLine(" ");
             Console.WriteLine("[보유 골드]");
-            Console.WriteLine(data.Gold + "G");
+            Console.WriteLine(Stat.data.Gold + "G");
             for (int i = 0; i < Village.storeList.Count; i++)
             {
                 Item item = Village.storeList[i];
@@ -92,11 +92,11 @@ namespace Rtanstore
                 selectedIndex >= 0 && selectedIndex < Village.storeList.Count)
             {
                 Item selectedItem = Village.storeList[selectedIndex];
-                if (data.Gold >= selectedItem.Price)
+                if (Stat.data.Gold >= selectedItem.Price)
                 {
                     if (!Village.inventoryList.Contains(selectedItem))
                     {
-                        data.Gold -= selectedItem.Price;
+                        Stat.data.Gold -= selectedItem.Price;
                         Village.inventoryList.Add(selectedItem);
                         Console.WriteLine($"구매를 완료했습니다.");
                     }
@@ -120,7 +120,7 @@ namespace Rtanstore
         }
         public void Lest()
         {
-            data.HP = 100;
+            Stat.data.HP = 100;
             Console.WriteLine("체력이 회복되었습니다.");
             Console.WriteLine("\n엔터를 누르면 상점으로 돌아갑니다.");
             Console.ReadLine();
