@@ -13,9 +13,9 @@ using static Rtanstat.stat;
 
 namespace Rtanstore
 {
-    internal class store
+    internal class Store
     {
-        public static void buy()
+        public void Buy()
         {
             Console.Clear();
             while (true)
@@ -51,10 +51,10 @@ namespace Rtanstore
                 switch (say)
                 {
                     case "1":
-                        store.BuyMenu();
+                        this.BuyMenu();
                         break;
                     case "2":
-                        store.Lest();
+                        this.Lest();
                         break;
                     case "0":
                         return;
@@ -65,7 +65,7 @@ namespace Rtanstore
                 }
             }
         }
-        public static void BuyMenu()
+        public void BuyMenu()
         {
             Console.Clear();
             Console.WriteLine("상점 - 아이템 구매");
@@ -118,7 +118,7 @@ namespace Rtanstore
             Console.WriteLine("\n엔터를 누르면 상점으로 돌아갑니다.");
             Console.ReadLine();
         }
-        public static void Lest()
+        public void Lest()
         {
             data.HP = 100;
             Console.WriteLine("체력이 회복되었습니다.");

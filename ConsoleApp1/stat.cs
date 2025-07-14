@@ -8,7 +8,7 @@ using static Rtanitem.RtanItem;
 
 namespace Rtanstat
 {
-    public static class stat
+    public static class Stat
     {
         
         public static StatData data = new StatData();

@@ -11,9 +11,13 @@ using static Rtanitem.RtanItem;
 namespace Rtaninventory
 {
 
-    internal class inventory
+    internal class Inventory
     {
+<<<<<<< Updated upstream
         public static void boy()
+=======
+        public void Pouch()
+>>>>>>> Stashed changes
         {
             Console.Clear();
             while (true)
@@ -48,7 +52,7 @@ namespace Rtaninventory
                 switch (say)
                 {
                     case "1":
-                        inventory.EquipMenu();
+                        this.EquipMenu();
                         break;
                     case "0":
                         return;
@@ -60,7 +64,7 @@ namespace Rtaninventory
 
             }
         }
-        public static void EquipMenu()
+        public void EquipMenu()
         {
             Console.Clear();
             Console.WriteLine("인벤토리 - 장착 관리");

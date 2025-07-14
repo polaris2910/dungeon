@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace Rtandungeon
 {
-    internal class dungeon
+    internal class Dungeon
     {
-        public static void Dungeon()
+        public void Battle()
         {
             while (true)
             {

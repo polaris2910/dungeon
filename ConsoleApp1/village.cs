@@ -54,7 +54,12 @@ namespace ConsoleApp1
                         stat.say();
                         break;
                     case "2":
+<<<<<<< Updated upstream
                         inventory.boy();
+=======
+                        Inventory inventory = new Inventory();
+                        inventory.Pouch();
+>>>>>>> Stashed changes
                         break;
                     case "3":
                         store.buy();
